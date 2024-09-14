@@ -1,5 +1,6 @@
 #include "../inc/main.h"
 
+#define C_IS_NOT_CORRECT 1
 
 int main(int argc, char* argv[])
 {
@@ -12,25 +13,43 @@ int main(int argc, char* argv[])
     printf("n - delete\n");
     printf("N - none\n");
 
-    char c = getch();
-
-    switch (c)
+    char c;
+    
+    while (C_IS_NOT_CORRECT)
     {
-        case 'y':
-            run(file);
-            delete(file);
-            break;
-            
-        case 'Y':
-            run(file);
-            break;
+        c = getch();
 
-        case 'n':
-            delete(file);
-            break;
+        if (
+            c!='y' &&
+            c!='Y' &&
+            c!='n' &&
+            c!='N'
+        )
+        {
+            printf("\a");
+            continue;
+        }
 
-        case 'N':
-            break;
+        switch (c)
+        {
+            case 'y':
+                run(file);
+                delete(file);
+                break;
+
+            case 'Y':
+                run(file);
+                break;
+
+            case 'n':
+                delete(file);
+                break;
+
+            case 'N':
+                break;
+        }
+
+        break;
     }
 
     return 0;
