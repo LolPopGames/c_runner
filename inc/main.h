@@ -2,5 +2,6 @@
 #define MAIN_H_
 
 #include <stdio.h>
+#include "cmd.h"
 
 #endif
