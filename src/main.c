@@ -4,6 +4,12 @@
 
 int main(int argc, char* argv[])
 {
+    if (argc != 2)
+    {
+        printf("Enter only c_runner file and file to run\n");
+        return 1;
+    }
+    
     const char *file = argv[1];
 
     make(file);
