@@ -1,0 +1,8 @@
+# Compiled files
+*.o
+*.obj
+*.exe
+
+# Configs
+.vscode/
+desktop.ini
