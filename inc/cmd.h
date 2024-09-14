@@ -5,5 +5,7 @@
 #include <stdlib.h>
 
 void make(const char *file);
+void run(const char *file);
+void delete(const char *file);
 
 #endif
