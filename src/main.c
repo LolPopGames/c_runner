@@ -14,5 +14,24 @@ int main(int argc, char* argv[])
 
     char c = getch();
 
+    switch (c)
+    {
+        case 'y':
+            run(file);
+            delete(file);
+            break;
+            
+        case 'Y':
+            run(file);
+            break;
+
+        case 'n':
+            delete(file);
+            break;
+
+        case 'N':
+            break;
+    }
+
     return 0;
 }
