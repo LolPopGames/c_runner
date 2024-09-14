@@ -1,7 +1,7 @@
 # Compiled files
-*.o
-*.obj
-*.exe
+# *.o   release version
+# *.obj release version
+# *.exe release version
 
 # Configs
 .vscode/

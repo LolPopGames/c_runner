@@ -30,6 +30,10 @@ Use __ctrl+alt+n__ in __c__ files to use c_runner
 
 To the fullest extent permitted by law, the author has dedicated this project to the public domain. There are no warranties or guarantees of any kind, and the author accepts no liability for any issues that may arise from the use of this project.
 
+## Version
+
+1.0
+
 ## Contact
 
 newlpg772@gmail.com
